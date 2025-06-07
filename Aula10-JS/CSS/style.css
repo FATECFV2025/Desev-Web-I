@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.calculadora{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+input, button{
+    width: 92%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px; 
+}
+
+
+
+.botoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botoes button{
+    flex: 1 1 45%;
+}
+
+#resultado{
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+
