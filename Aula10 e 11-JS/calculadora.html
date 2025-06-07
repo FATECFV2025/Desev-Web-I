@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="js/external.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Quando o JS fica no HEAD, ele não consegue utilizar o AddEventListner, pois os componentes em HTML não foram carregados -->
+
+     <!-- Normalmente é utilizado o CSS no HEAD, pois os elementos são carregados e estilizados no decorrer da renderização da página no navegador -->
+
+     <!-- Apenas alguns JS é permitido colocar no HEAD, por exemplo, Bibliotecas do JS (Jquery) -->
+    
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+
+        <!-- <div class="botoes">
+            <button onclick="calcular('somar')">+</button>
+            <button onclick="calcular('subtrair')">-</button>
+            <button onclick="calcular('multiplicar')">*</button>
+            <button onclick="calcular('dividir')">/</button>
+        </div> -->
+
+        <div class="botoes">
+            <button id="somar">+</button>
+            <button id="subtrair">-</button>
+            <button id="multiplicar">*</button>
+            <button id="dividir">/</button>
+        </div>
+        <div id="resultado"> Resultado: </div>
+    </div>
+    <!-- O JS normalmente fica nas ultimas linhas do <body> em razão dos componentes em HTML serem carregados primeiro -->
+
+    <!-- Dessa forma o AddEventListener poderá localiza-los, pois foram carregados por completo -->
+    <script src="js/calculadora.js"></script>
+</body>
+
+</html>
